@@ -1,0 +1,23 @@
+#include "glut.h"
+#include <stdio.h>
+
+void main
+(int argc, char*argv[])
+{glutInit (&argc, argv);
+ glutInitDisplayMode (Glut_RGB);
+glutInitWindowPosition (0,0);
+glutInitWindowSize (500,500);
+glutCreateWindow ("Look at me");
+glutDisplayFunc (disp);
+glutKeyboardFunc (keyb);
+glutMainLoop();
+
+Void disp(void){
+	glClearColor(0,0,0,1);
+	glClear(GL_COLOR_BUFFER_GL);
+	glBegin(GL_LINES);
+	glvertex3f(x0,y0,z0);
+    glvertex3f(x1,y1,z1);
+glEnd();
+glFinish;}
+//void keyb(unsigned char)
