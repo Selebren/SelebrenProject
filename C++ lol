@@ -10,7 +10,7 @@ glutInitWindowSize (500,500);
 glutCreateWindow ("Look at me");
 glutDisplayFunc (disp);
 glutKeyboardFunc (keyb);
-glutMainLoop();
+glutMainLoop(900);
 
 Void disp(void){
 	glClearColor(0,0,0,1);
@@ -20,4 +20,4 @@ Void disp(void){
     glvertex3f(x1,y1,z1);
 glEnd();
 glFinish;}
-//void keyb(unsigned char)
+void keyb(unsigned char)
